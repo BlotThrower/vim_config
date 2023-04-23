@@ -14,15 +14,21 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   -- My plugins here
-  use 'Mofiqul/dracula.nvim' 
+  use 'Mofiqul/dracula.nvim'
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
 	use 'nvim-treesitter/nvim-treesitter'
 	use {
-				'nvim-telescope/telescope.nvim', tag = '0.1.1',
-				requires = { {'nvim-lua/plenary.nvim'} }
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
+		"neovim/nvim-lspconfig",
+	}
+	use {
+		'nvim-telescope/telescope.nvim', tag = '0.1.1',
+		requires = { {'nvim-lua/plenary.nvim'} }
   }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
