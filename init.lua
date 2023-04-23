@@ -1,0 +1,5 @@
+require("chris.remap")
+require("chris.misc")
+require("chris.plugins")
+require("chris.plugconf")
+print("hello you bitch ass motherfucker!")

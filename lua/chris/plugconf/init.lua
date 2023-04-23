@@ -1,0 +1,5 @@
+require("chris.plugconf.dracula")
+require("chris.plugconf.lualine")
+require("chris.plugconf.tree")
+require("chris.plugconf.telescope")
+require("chris.plugconf.treesitter")
