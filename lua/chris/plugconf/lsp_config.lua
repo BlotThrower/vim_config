@@ -11,4 +11,4 @@ lsp.on_attach(function(client, bufnr)
 	vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
 end)
 
-lsp.setnp()
+lsp.setup()
