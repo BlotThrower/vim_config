@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls", "rust_analyzer", "clangd", "omnisharp", "html", "cssls", "quick_lint_js", "pyright" },
+	ensure_installed = { "lua_ls", "r_language_server", "rust_analyzer", "clangd", "omnisharp", "html", "cssls", "quick_lint_js", "pyright" },
 })
 
 local on_attach = function(_, _)
