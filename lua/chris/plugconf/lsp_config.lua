@@ -12,3 +12,7 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
+vim.api.nvim_set_keymap('n', '<leader>do', '<cmd>lua vim.diagnostic.open_float()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>dd', '<cmd>lua vim.diagnostic.goto_prev()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>da', '<cmd>lua vim.diagnostic.goto_next()<CR>', { noremap = true, silent = true })
